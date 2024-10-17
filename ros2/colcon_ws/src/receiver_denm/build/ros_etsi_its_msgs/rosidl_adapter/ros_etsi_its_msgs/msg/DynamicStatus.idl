@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/DynamicStatus.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module DynamicStatus_Constants {
+      const int32 VALUE_DYNAMIC = 0;
+      const int32 VALUE_HASBEENDYNAMIC = 1;
+      const int32 VALUE_STATIC = 2;
+    };
+    struct DynamicStatus {
+      int32 value;
+    };
+  };
+};

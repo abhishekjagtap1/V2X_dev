@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/PathDeltaTime",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PathDeltaTime",
+      "hash_string": "RIHS01_a7c1a66b4e89f67baba65ee4f6e8a5f7937a81a28025ace12fbe0329e085f63f"
+    }
+  ]
+}

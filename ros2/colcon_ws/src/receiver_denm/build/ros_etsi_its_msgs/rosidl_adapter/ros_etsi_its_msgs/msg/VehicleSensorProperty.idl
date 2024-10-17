@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/VehicleSensorProperty.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct VehicleSensorProperty {
+      @verbatim (language="comment", text=
+        "zeroPointOneMeter(1), oneMeter(10)} (0..10000)")
+      int32 range;
+
+      @verbatim (language="comment", text=
+        "zeroPointOneDegree(1), oneDegree(10), unavailable(3601)} (0..3601)")
+      int32 horizontal_opening_angle_start;
+
+      @verbatim (language="comment", text=
+        "zeroPointOneDegree(1), oneDegree(10), unavailable(3601)} (0..3601)")
+      int32 horizontal_opening_angle_end;
+
+      boolean has_vertical_opening_angle_start;
+
+      @verbatim (language="comment", text=
+        "zeroPointOneDegree(1), oneDegree(10), unavailable(3601)} (0..3601)")
+      int32 vertical_opening_angle_start;
+
+      boolean has_vertical_opening_angle_end;
+
+      @verbatim (language="comment", text=
+        "zeroPointOneDegree(1), oneDegree(10), unavailable(3601)} (0..3601)")
+      int32 vertical_opening_angle_end;
+    };
+  };
+};

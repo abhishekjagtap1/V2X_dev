@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/DeltaReferencePosition.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module DeltaReferencePosition_Constants {
+      const int32 ONE_MICRODEGREE_NORTH = 10;
+      const int32 ONE_MICRODEGREE_SOUTH = -10;
+      const int32 ONE_MICRODEGREE_EAST = 10;
+      const int32 ONE_MICRODEGREE_WEST = -10;
+      const int32 ONE_CENTIMETER_UP = 1;
+      const int32 ONE_CENTIMETER_DOWN = -1;
+      const int32 LATITUDE_UNAVAILABLE = 131072;
+      const int32 LONGITUDE_UNAVAILABLE = 131072;
+      const int16 ALTITUDE_UNAVAILABLE = 12800;
+    };
+    struct DeltaReferencePosition {
+      @verbatim (language="comment", text=
+        "0.1 micro degree")
+      int32 delta_latitude;
+
+      @verbatim (language="comment", text=
+        "0.1 micro degree")
+      int32 delta_longitude;
+
+      @verbatim (language="comment", text=
+        "centimeter")
+      int16 delta_altitude;
+    };
+  };
+};

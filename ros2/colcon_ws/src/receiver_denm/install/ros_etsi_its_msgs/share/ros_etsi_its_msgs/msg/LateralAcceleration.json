@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/LateralAcceleration",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "confidence",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/LateralAcceleration",
+      "hash_string": "RIHS01_473b9e6b95fc4c43a1bfc7fea80e4bab8ba5c116b73eb26eaf15911d415d8a36"
+    }
+  ]
+}

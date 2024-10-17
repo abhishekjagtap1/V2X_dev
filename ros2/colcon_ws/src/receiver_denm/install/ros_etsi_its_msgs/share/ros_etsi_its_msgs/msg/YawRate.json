@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/YawRate",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 4,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "confidence",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/YawRate",
+      "hash_string": "RIHS01_9499a2f280a0f93c9c79e50d19deb2b9fa47aa3ae4e4581c35dc223a6cd52863"
+    }
+  ]
+}

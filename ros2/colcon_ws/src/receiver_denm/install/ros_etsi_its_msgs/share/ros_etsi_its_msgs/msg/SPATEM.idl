@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/SPATEM.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/IntersectionState.idl"
+#include "ros_etsi_its_msgs/msg/ItsPduHeader.idl"
+#include "std_msgs/msg/Header.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct SPATEM {
+      std_msgs::msg::Header header;
+
+      ros_etsi_its_msgs::msg::ItsPduHeader its_header;
+
+      sequence<ros_etsi_its_msgs::msg::IntersectionState> intersections;
+    };
+  };
+};

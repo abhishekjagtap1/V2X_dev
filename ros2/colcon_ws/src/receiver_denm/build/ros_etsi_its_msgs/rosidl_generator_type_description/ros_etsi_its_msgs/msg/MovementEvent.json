@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/MovementEvent",
+      "fields": [
+        {
+          "name": "event_state",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "min_end_time",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/MovementEvent",
+      "hash_string": "RIHS01_504cec91caae9861292d3824b2ca398755fc6a30e05e0cc21b572c827cbe6422"
+    }
+  ]
+}

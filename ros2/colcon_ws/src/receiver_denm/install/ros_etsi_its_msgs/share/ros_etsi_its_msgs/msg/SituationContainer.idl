@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/SituationContainer.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/CauseCode.idl"
+#include "ros_etsi_its_msgs/msg/EventPoint.idl"
+#include "ros_etsi_its_msgs/msg/InformationQuality.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct SituationContainer {
+      ros_etsi_its_msgs::msg::InformationQuality information_quality;
+
+      ros_etsi_its_msgs::msg::CauseCode event_type;
+
+      boolean has_linked_cause;
+
+      ros_etsi_its_msgs::msg::CauseCode linked_cause;
+
+      sequence<ros_etsi_its_msgs::msg::EventPoint> event_history;
+    };
+  };
+};

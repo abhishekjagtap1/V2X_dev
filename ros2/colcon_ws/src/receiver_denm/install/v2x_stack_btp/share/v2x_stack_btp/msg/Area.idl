@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/Area.msg
+// generated code does not contain a copyright notice
+
+
+module v2x_stack_btp {
+  module msg {
+    @verbatim (language="comment", text=
+      "WGS-84 latitude for the centre position of shape")
+    struct Area {
+      int32 latitude;
+
+      @verbatim (language="comment", text=
+        "WGS-84 longitude for the centre position of shape")
+      @unit (value="1/10 micro degree")
+      int32 longitude;
+
+      @verbatim (language="comment", text=
+        "Distance a of the geometric shape (always non-zero)")
+      @unit (value="metres")
+      uint16 distance_a;
+
+      @verbatim (language="comment", text=
+        "Distance b of the geometric shape")
+      @unit (value="metres")
+      uint16 distance_b;
+
+      @verbatim (language="comment", text=
+        "Angle of the geometric shape")
+      @unit (value="degrees from North")
+      uint16 angle;
+
+      @verbatim (language="comment", text=
+        "Shape @sa eETSIGeoNetDestType")
+      uint8 shape;
+
+      @verbatim (language="comment", text=
+        "Padding")
+      uint8 unused;
+    };
+  };
+};

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/AccelerationControl.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module AccelerationControl_Constants {
+      const uint8 BRAKE_PEDAL_ENGAGED = 1;
+      const uint8 GAS_PEDAL_ENGAGED = 2;
+      const uint8 EMERGENCY_BRAKE_ENGAGED = 4;
+      const uint8 COLLISION_WARNING_ENGAGED = 8;
+      const uint8 ACC_ENGAGED = 16;
+      const uint8 CRUISE_CONTROL_ENGAGED = 32;
+      const uint8 SPEED_LIMITER_ENGAGED = 64;
+    };
+    struct AccelerationControl {
+      uint8 value;
+    };
+  };
+};

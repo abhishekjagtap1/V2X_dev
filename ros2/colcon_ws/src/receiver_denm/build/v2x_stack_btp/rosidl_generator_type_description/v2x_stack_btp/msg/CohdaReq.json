@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "v2x_stack_btp/msg/CohdaReq",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "v2x_stack_btp/msg/CohdaReq",
+      "hash_string": "RIHS01_a23ff1a102e98e01b9d6d1f6df54d073595c24cf097978a379c005a7fc16c381"
+    }
+  ]
+}

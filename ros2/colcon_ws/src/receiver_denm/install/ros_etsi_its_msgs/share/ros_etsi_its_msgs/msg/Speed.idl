@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/Speed.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module Speed_Constants {
+      const uint16 VALUE_STANDSTILL = 0;
+      const uint16 VALUE_ONE_CENTIMETER_PER_SECOND = 1;
+      const uint16 VALUE_UNAVAILABLE = 16383;
+      const uint8 CONFIDENCE_OUT_OF_RANGE = 126;
+      const uint8 CONFIDENCE_UNAVAILABLE = 127;
+    };
+    struct Speed {
+      @verbatim (language="comment", text=
+        "0.01 m/s")
+      uint16 value;
+
+      @verbatim (language="comment", text=
+        "0.01 m/s")
+      uint8 confidence;
+    };
+  };
+};

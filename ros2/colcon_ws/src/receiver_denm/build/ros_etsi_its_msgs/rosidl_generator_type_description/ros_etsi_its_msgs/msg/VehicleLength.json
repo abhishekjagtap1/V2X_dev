@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleLength",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "confidence_indication",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleLength",
+      "hash_string": "RIHS01_f8f9344a5ed9a862d36b7ca24c3e34d839aa46673e5701e86d4ee9daf1bbb767"
+    }
+  ]
+}

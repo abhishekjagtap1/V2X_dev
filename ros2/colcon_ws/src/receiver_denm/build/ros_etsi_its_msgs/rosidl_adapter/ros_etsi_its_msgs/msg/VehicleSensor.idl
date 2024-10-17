@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/VehicleSensor.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/VehicleSensorProperty.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct VehicleSensor {
+      uint8 ref_point_id;
+
+      @verbatim (language="comment", text=
+        "negativeZeroPointZeroOneMeter(-1), negativeOneMeter(-100)} (-5000..0)")
+      int32 x_sensor_offset;
+
+      @verbatim (language="comment", text=
+        "zeroPointZeroOneMeter(1), oneMeter(100)} (-1000..1000)")
+      int32 y_sensor_offset;
+
+      @verbatim (language="comment", text=
+        "zeroPointZeroOneMeter(1), oneMeter(100)} (0..1000)")
+      int32 z_sensor_offset;
+
+      sequence<ros_etsi_its_msgs::msg::VehicleSensorProperty> vehicle_sensor_property_list;
+    };
+  };
+};

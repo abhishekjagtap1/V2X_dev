@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/GeoNetDestination.msg
+// generated code does not contain a copyright notice
+
+#include "v2x_stack_btp/msg/GeoNetArea.idl"
+
+module v2x_stack_btp {
+  module msg {
+    typedef uint8 uint8__8[8];
+    module GeoNetDestination_Constants {
+      const uint8 TYPE_NONE = 0;
+      const uint8 TYPE_ADDRESS = 1;
+      const uint8 TYPE_AREA = 2;
+    };
+    struct GeoNetDestination {
+      uint8 type;
+
+      uint8__8 address;
+
+      v2x_stack_btp::msg::GeoNetArea area;
+    };
+  };
+};

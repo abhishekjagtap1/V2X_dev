@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/RelevanceTrafficDirection",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/RelevanceTrafficDirection",
+      "hash_string": "RIHS01_148ca137170d914821da068e8436ec07a7b8fbf1d502437ee594edd81df4a30a"
+    }
+  ]
+}

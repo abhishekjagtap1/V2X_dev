@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from v2x_stack_btp/srv/BtpData.srv
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "v2x_stack_btp/msg/GeoNetDestination.idl"
+#include "v2x_stack_btp/msg/TrafficClass.idl"
+
+module v2x_stack_btp {
+  module srv {
+    typedef uint8 uint8__1[1];
+    struct BtpData_Request {
+      uint8 btp_type;
+
+      uint16 source_port;
+
+      uint16 destination_port;
+
+      uint16 destination_port_info;
+
+      uint8 transport_type;
+
+      v2x_stack_btp::msg::GeoNetDestination destination;
+
+      uint32 its_aid;
+
+      uint8 hop_limit;
+
+      v2x_stack_btp::msg::TrafficClass traffic_class;
+
+      builtin_interfaces::msg::Duration lifetime;
+
+      builtin_interfaces::msg::Duration repetition_interval;
+
+      builtin_interfaces::msg::Duration repetition_duration;
+
+      uint8__1 data;
+    };
+    struct BtpData_Response {
+      uint8 confirm;
+    };
+  };
+};

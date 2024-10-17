@@ -1,0 +1,36 @@
+// generated from rosidl_generator_c/resource/idl__type_support.h.em
+// with input from ros_etsi_its_msgs:msg/BasicVehicleContainerLowFrequency.idl
+// generated code does not contain a copyright notice
+
+// IWYU pragma: private, include "ros_etsi_its_msgs/msg/basic_vehicle_container_low_frequency.h"
+
+
+#ifndef ROS_ETSI_ITS_MSGS__MSG__DETAIL__BASIC_VEHICLE_CONTAINER_LOW_FREQUENCY__TYPE_SUPPORT_H_
+#define ROS_ETSI_ITS_MSGS__MSG__DETAIL__BASIC_VEHICLE_CONTAINER_LOW_FREQUENCY__TYPE_SUPPORT_H_
+
+#include "rosidl_typesupport_interface/macros.h"
+
+#include "ros_etsi_its_msgs/msg/rosidl_generator_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_ros_etsi_its_msgs
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  ros_etsi_its_msgs,
+  msg,
+  BasicVehicleContainerLowFrequency
+)(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // ROS_ETSI_ITS_MSGS__MSG__DETAIL__BASIC_VEHICLE_CONTAINER_LOW_FREQUENCY__TYPE_SUPPORT_H_

@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/ObjectRefPoint.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module ObjectRefPoint_Constants {
+      const int32 VALUE_MID = 0;
+      const int32 VALUE_BOTTOMLEFT = 1;
+      const int32 VALUE_MIDLEFT = 2;
+      const int32 VALUE_TOPLEFT = 3;
+      const int32 VALUE_BOTTOMMID = 4;
+      const int32 VALUE_TOPMID = 5;
+      const int32 VALUE_BOTTOMRIGHT = 6;
+      const int32 VALUE_MIDRIGHT = 7;
+      const int32 VALUE_TOPRIGHT = 8;
+    };
+    @verbatim (language="comment", text=
+      "mid(0), bottomLeft(1), midLeft(2), topLeft(3), bottomMid(4), topMid(5), bottomRight(6), midRight(7), topRight(8)")
+    struct ObjectRefPoint {
+      int32 value;
+    };
+  };
+};

@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/GeoNetArea.msg
+// generated code does not contain a copyright notice
+
+
+module v2x_stack_btp {
+  module msg {
+    module GeoNetArea_Constants {
+      const uint8 TYPE_CIRCLE = 1;
+      const uint8 TYPE_RECTANGLE = 2;
+      const uint8 TYPE_ELLIPSE = 3;
+    };
+    struct GeoNetArea {
+      uint8 type;
+
+      double latitude;
+
+      double longitude;
+
+      @verbatim (language="comment", text=
+        "meter (circle: radius, rectangle: short bisector, ellipse: long semi-axis)")
+      float distance_a;
+
+      @verbatim (language="comment", text=
+        "meter (circle: zero, rectangle: long bisector, ellispe: short semi-axis)")
+      float distance_b;
+
+      @verbatim (language="comment", text=
+        "degrees from north (w.r.t. distance_a)")
+      float angle;
+    };
+  };
+};

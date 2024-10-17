@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/IntersectionGeometry.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/GenericLane.idl"
+#include "ros_etsi_its_msgs/msg/ReferencePosition.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct IntersectionGeometry {
+      string name;
+
+      uint16 id;
+
+      uint8 revision;
+
+      ros_etsi_its_msgs::msg::ReferencePosition ref_point;
+
+      uint16 lane_width;
+
+      sequence<ros_etsi_its_msgs::msg::GenericLane> lane_set;
+    };
+  };
+};

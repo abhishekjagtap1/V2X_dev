@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/Heading.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module Heading_Constants {
+      const uint16 VALUE_NORTH = 0;
+      const uint16 VALUE_EAST = 900;
+      const uint16 VALUE_SOUTH = 1800;
+      const uint16 VALUE_WEST = 2700;
+      const uint16 VALUE_UNAVAILABLE = 3601;
+      const uint8 CONFIDENCE_ZERO_POINT_ONE_DEGREE = 1;
+      const uint8 CONFIDENCE_ONE_DEGREE = 10;
+      const uint8 CONFIDENCE_OUT_OF_RANGE = 126;
+      const uint8 CONFIDENCE_UNAVAILABLE = 127;
+    };
+    struct Heading {
+      @verbatim (language="comment", text=
+        "0.1 degree")
+      uint16 value;
+
+      uint8 confidence;
+    };
+  };
+};

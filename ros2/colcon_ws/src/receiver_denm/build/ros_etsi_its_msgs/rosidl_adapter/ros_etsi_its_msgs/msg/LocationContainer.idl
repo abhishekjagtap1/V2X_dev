@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/LocationContainer.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/Heading.idl"
+#include "ros_etsi_its_msgs/msg/PathHistory.idl"
+#include "ros_etsi_its_msgs/msg/Speed.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    module LocationContainer_Constants {
+      const uint8 ROAD_TYPE_URBAN_NO_STRUCTURAL_SEPARATION_TO_OPPOSITE_LANES = 0;
+      const uint8 ROAD_TYPE_URBAN_WITH_STRUCTURAL_SEPARATION_TO_OPPOSITE_LANES = 1;
+      const uint8 ROAD_TYPE_NON_URBAN_NO_STRUCTURAL_SEPARATION_TO_OPPOSITE_LANES = 2;
+      const uint8 ROAD_TYPE_NON_URBAN_WITH_STRUCTURAL_SEPARATION_TO_OPPOSITE_LANES = 3;
+      const uint8 ROAD_TYPE_UNAVAILABLE = 255;
+    };
+    struct LocationContainer {
+      ros_etsi_its_msgs::msg::Speed event_speed;
+
+      ros_etsi_its_msgs::msg::Heading event_position_heading;
+
+      sequence<ros_etsi_its_msgs::msg::PathHistory> traces;
+
+      uint8 road_type;
+    };
+  };
+};

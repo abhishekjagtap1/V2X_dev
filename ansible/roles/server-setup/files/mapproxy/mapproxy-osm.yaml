@@ -1,0 +1,77 @@
+services:
+  #sets up how to make the source data available
+  demo:
+  tms:
+  wmts:
+  wms:
+    srs: ['EPSG:900913', 'EPSG:2154','EPSG:3857']
+
+parts:
+    coverages:
+      demo_coverage: &demo_coverage
+        bbox: [11.399500, 48.725633, 11.487147, 48.792537]
+        srs: 'EPSG:4326'
+
+layers:
+  #sets up which layers you want to make available using the services above. You can add many, but let's stick to osm data here.
+  - name: osm
+    title: Open Streetmap Tiles
+    sources: [osm_cache] #this layer should use the osm_cache (defined below) as it's source.
+
+caches:
+  #setup the cache for the open streetmap tiles. This cache is used by the layer above.
+  osm_cache:
+    sources: [osm_tiles] #here you set what source data (defined below) you want to cache
+    format: image/png
+    grids: [osm_grid]
+
+sources:
+   osm_tiles:
+     #the osm_tiles source refers to the openstreetmap.org tiles. These will be downloaded upon request (if not already cached) and served by MapProxy
+     type: tile
+     url: https://c.tile.openstreetmap.de/%(tms_path)s.%(format)s
+     grid: osm_grid #the grid to use for the osm tiles. This is really important. It is specified below.
+     #coverage: *demo_coverage
+
+grids:
+  osm_grid:
+    srs:  EPSG:3857
+    origin: nw
+    num_levels: 22
+    res:
+      - 156543.0339280410
+      - 78271.5169640205
+      - 39135.7584820102
+      - 19567.8792410051
+      - 9783.9396205026
+      - 4891.9698102513
+      - 2445.9849051256
+      - 1222.9924525628
+      - 611.4962262814
+      - 305.7481131407
+      - 152.8740565704
+      - 76.4370282852
+      - 38.2185141426
+      - 19.1092570713
+      - 9.5546285356
+      - 4.7773142678
+      - 2.3886571339
+      - 1.1943285670
+      - 0.5971642835
+      - 0.2985821417
+      - 0.1492910709
+      - 0.0746455354
+
+
+
+globals:
+  #next are some global configuration options for MapProxy. They mostly explain themselves, or can be looked-up in the MapProxy docs.
+  cache:
+    # where to store the cached images
+    base_dir: '/var/mapproxy/cache_data'
+    # where to store lockfiles
+    lock_dir: '/var/mapproxy/cache_data'
+  # image/transformation options
+  image:
+      resampling_method: bilinear
+      jpeg_quality: 90

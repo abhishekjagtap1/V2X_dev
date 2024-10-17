@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/VehicleRole.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module VehicleRole_Constants {
+      const uint8 DEFAULT = 0;
+      const uint8 PUBLIC_TRANSPORT = 1;
+      const uint8 SPECIAL_TRANSPORT = 2;
+      const uint8 DANGEROUS_GOODS = 3;
+      const uint8 ROAD_WORK = 4;
+      const uint8 RESCUE = 5;
+      const uint8 EMERGENCY = 6;
+      const uint8 SAFETY_CAR = 7;
+      const uint8 AGRICULTURE = 8;
+      const uint8 COMMERCIAL = 9;
+      const uint8 MILITARY = 10;
+      const uint8 ROAD_OPERATOR = 11;
+      const uint8 TAXI = 12;
+    };
+    struct VehicleRole {
+      uint8 value;
+    };
+  };
+};

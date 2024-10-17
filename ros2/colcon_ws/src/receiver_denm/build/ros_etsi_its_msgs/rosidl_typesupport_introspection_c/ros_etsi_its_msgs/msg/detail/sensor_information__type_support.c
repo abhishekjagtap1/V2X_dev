@@ -1,0 +1,132 @@
+// generated from rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
+// with input from ros_etsi_its_msgs:msg/SensorInformation.idl
+// generated code does not contain a copyright notice
+
+#include <stddef.h>
+#include "ros_etsi_its_msgs/msg/detail/sensor_information__rosidl_typesupport_introspection_c.h"
+#include "ros_etsi_its_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+#include "rosidl_typesupport_introspection_c/field_types.h"
+#include "rosidl_typesupport_introspection_c/identifier.h"
+#include "rosidl_typesupport_introspection_c/message_introspection.h"
+#include "ros_etsi_its_msgs/msg/detail/sensor_information__functions.h"
+#include "ros_etsi_its_msgs/msg/detail/sensor_information__struct.h"
+
+
+// Include directives for member types
+// Member `detection_area`
+#include "ros_etsi_its_msgs/msg/vehicle_sensor.h"
+// Member `detection_area`
+#include "ros_etsi_its_msgs/msg/detail/vehicle_sensor__rosidl_typesupport_introspection_c.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+void ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_init_function(
+  void * message_memory, enum rosidl_runtime_c__message_initialization _init)
+{
+  // TODO(karsten1987): initializers are not yet implemented for typesupport c
+  // see https://github.com/ros2/ros2/issues/397
+  (void) _init;
+  ros_etsi_its_msgs__msg__SensorInformation__init(message_memory);
+}
+
+void ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_fini_function(void * message_memory)
+{
+  ros_etsi_its_msgs__msg__SensorInformation__fini(message_memory);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_member_array[3] = {
+  {
+    "sensor_id",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ros_etsi_its_msgs__msg__SensorInformation, sensor_id),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "type",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ros_etsi_its_msgs__msg__SensorInformation, type),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "detection_area",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(ros_etsi_its_msgs__msg__SensorInformation, detection_area),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  }
+};
+
+static const rosidl_typesupport_introspection_c__MessageMembers ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_members = {
+  "ros_etsi_its_msgs__msg",  // message namespace
+  "SensorInformation",  // message name
+  3,  // number of fields
+  sizeof(ros_etsi_its_msgs__msg__SensorInformation),
+  false,  // has_any_key_member_
+  ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_member_array,  // message members
+  ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_init_function,  // function to initialize message memory (memory has to be allocated)
+  ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_fini_function  // function to terminate message instance (will not free memory)
+};
+
+// this is not const since it must be initialized on first access
+// since C does not allow non-integral compile-time constants
+static rosidl_message_type_support_t ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_type_support_handle = {
+  0,
+  &ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_members,
+  get_message_typesupport_handle_function,
+  &ros_etsi_its_msgs__msg__SensorInformation__get_type_hash,
+  &ros_etsi_its_msgs__msg__SensorInformation__get_type_description,
+  &ros_etsi_its_msgs__msg__SensorInformation__get_type_description_sources,
+};
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_ros_etsi_its_msgs
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ros_etsi_its_msgs, msg, SensorInformation)() {
+  ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_member_array[2].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ros_etsi_its_msgs, msg, VehicleSensor)();
+  if (!ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_type_support_handle.typesupport_identifier) {
+    ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_type_support_handle.typesupport_identifier =
+      rosidl_typesupport_introspection_c__identifier;
+  }
+  return &ros_etsi_its_msgs__msg__SensorInformation__rosidl_typesupport_introspection_c__SensorInformation_message_type_support_handle;
+}
+#ifdef __cplusplus
+}
+#endif

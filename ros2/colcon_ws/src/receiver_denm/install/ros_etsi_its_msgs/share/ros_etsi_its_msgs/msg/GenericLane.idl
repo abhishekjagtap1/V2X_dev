@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/GenericLane.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/Connection.idl"
+#include "ros_etsi_its_msgs/msg/NodeSetXY.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct GenericLane {
+      uint8 lane_id;
+
+      string name;
+
+      uint8 ingress_approach;
+
+      uint8 egress_approach;
+
+      uint8 lane_direction;
+
+      sequence<ros_etsi_its_msgs::msg::NodeSetXY> node_list;
+
+      sequence<ros_etsi_its_msgs::msg::Connection> connects_to;
+    };
+  };
+};

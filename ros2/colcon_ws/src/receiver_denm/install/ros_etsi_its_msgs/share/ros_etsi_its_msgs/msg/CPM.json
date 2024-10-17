@@ -1,0 +1,1388 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/CPM",
+      "fields": [
+        {
+          "name": "header",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "std_msgs/msg/Header"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "its_header",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/ItsPduHeader"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "generation_delta_time",
+          "type": {
+            "type_id": 5,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "station_type",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/StationType"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "reference_position",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/ReferencePosition"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "originating_vehicle_container",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/OriginatingVehicleContainer"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "has_sensor_information_container",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "sensor_information_container",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/SensorInformationContainer"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "has_list_of_perceived_object",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "list_of_perceived_objects",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/ListOfPerceivedObjects"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "number_of_perceived_objects",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Altitude",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/DriveDirection",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/DynamicStatus",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Heading",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ItsPduHeader",
+        "fields": [
+          {
+            "name": "protocol_version",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "message_id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "station_id",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/LateralAcceleration",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ListOfPerceivedObjects",
+        "fields": [
+          {
+            "name": "perceived_object_container",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/PerceivedObject"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/LongitudinalAcceleration",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/MatchedPosition",
+        "fields": [
+          {
+            "name": "lane_id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ObjectDimension",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ObjectDistanceWithConfidence",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ObjectRefPoint",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/OriginatingVehicleContainer",
+        "fields": [
+          {
+            "name": "heading",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/Heading"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "speed",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/Speed"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_vehicle_orientation_angle",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vehicle_orientation_angle",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/WGS84Angle"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "drive_direction",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/DriveDirection"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_vehicle_length",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vehicle_length",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/VehicleLength"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_vehicle_width",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vehicle_width",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/VehicleWidth"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_vehicle_height",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vehicle_height",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_longitudinal_acceleration",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "longitudinal_acceleration",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/LongitudinalAcceleration"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_yaw_rate",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "yaw_rate",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/YawRate"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/PerceivedObject",
+        "fields": [
+          {
+            "name": "object_id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_sensor_id_list",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sensor_id_list",
+            "type": {
+              "type_id": 147,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "time_of_detection",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "time_of_measurement",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "object_age",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "object_confidence",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "x_distance",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ObjectDistanceWithConfidence"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y_distance",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ObjectDistanceWithConfidence"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z_distance",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ObjectDistanceWithConfidence"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "x_speed",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/SpeedExtended"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y_speed",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/SpeedExtended"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z_speed",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/SpeedExtended"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "x_acceleration",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/LongitudinalAcceleration"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y_acceleration",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/LateralAcceleration"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_planar_object_dimension1",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "planar_object_dimension1",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ObjectDimension"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_planar_object_dimension2",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "planar_object_dimension2",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ObjectDimension"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_vertical_object_dimension",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vertical_object_dimension",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ObjectDimension"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "object_ref_point",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ObjectRefPoint"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "dynamic_status",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/DynamicStatus"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "classification",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/StationType"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "matched_position",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/MatchedPosition"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "object_angle",
+            "type": {
+              "type_id": 10,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse",
+        "fields": [
+          {
+            "name": "semi_major_confidence",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "semi_minor_confidence",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "semi_major_orientation",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ReferencePosition",
+        "fields": [
+          {
+            "name": "latitude",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "longitude",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "position_confidence",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "altitude",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/Altitude"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/SensorInformation",
+        "fields": [
+          {
+            "name": "sensor_id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "type",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "detection_area",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/VehicleSensor"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/SensorInformationContainer",
+        "fields": [
+          {
+            "name": "sensors_information",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/SensorInformation"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Speed",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/SpeedExtended",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/StationType",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/VehicleLength",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence_indication",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/VehicleSensor",
+        "fields": [
+          {
+            "name": "ref_point_id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "x_sensor_offset",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y_sensor_offset",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "z_sensor_offset",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vehicle_sensor_property_list",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/VehicleSensorProperty"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/VehicleSensorProperty",
+        "fields": [
+          {
+            "name": "range",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "horizontal_opening_angle_start",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "horizontal_opening_angle_end",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_vertical_opening_angle_start",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vertical_opening_angle_start",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "has_vertical_opening_angle_end",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "vertical_opening_angle_end",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/VehicleWidth",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/WGS84Angle",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/YawRate",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "std_msgs/msg/Header",
+        "fields": [
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "frame_id",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/CPM",
+      "hash_string": "RIHS01_e089cc4215d4aee3aaabde521dc1a7b3e03d64a3101cc9c62817c36514ec5b02"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Altitude",
+      "hash_string": "RIHS01_654dd35c53feb7ef5c8d6fe7e02e54499cd55da32f1300fdec0c0b3e75e073a2"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/DriveDirection",
+      "hash_string": "RIHS01_534366d955a615b97a37fbaec04db50ea23f107505a56f92a09e38c92e82017e"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/DynamicStatus",
+      "hash_string": "RIHS01_5a9dbd8e0abd48f06be11b3c1a30c969b8ea90588980e49b632493ae88c843fb"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Heading",
+      "hash_string": "RIHS01_1682df3ef7895b6a10fb451795d3700d215d7b2a7da0ab947a7969c93bb51d9c"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ItsPduHeader",
+      "hash_string": "RIHS01_97fc704990f32d7c48046ce138d065b69d4140282b7128617232db52f61d5cb6"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/LateralAcceleration",
+      "hash_string": "RIHS01_473b9e6b95fc4c43a1bfc7fea80e4bab8ba5c116b73eb26eaf15911d415d8a36"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ListOfPerceivedObjects",
+      "hash_string": "RIHS01_d349db819835396aa6d5512bfac586cfe78a95a741523c38f09749885099af4c"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/LongitudinalAcceleration",
+      "hash_string": "RIHS01_3426c79ad24d00e5fa3ad8e66a186935019291f1bc3311dfa015bdbdb370d8e8"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/MatchedPosition",
+      "hash_string": "RIHS01_3cfada28c93ce6ac0fbe3a9c8410d9f3bb82c94ae1cc0447ebe030131bb73d7d"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ObjectDimension",
+      "hash_string": "RIHS01_36ef2ad2ab0dca81d9149b7ddbde52851b39f07eca95ace404894ba3f5cf9178"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ObjectDistanceWithConfidence",
+      "hash_string": "RIHS01_fbb19c29b83bc947d64f0bd993f28a0c25cd013e5c1eedbf24bbc9104dc82c16"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ObjectRefPoint",
+      "hash_string": "RIHS01_f7f97861b0d0fcc2ea9d1b278882ad98aab07454acacfb4eee9d4cddfafc31dd"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/OriginatingVehicleContainer",
+      "hash_string": "RIHS01_5e755171b2028c64e1541c8fd57f40f9bbd31687026152ad39d02bae60245b2a"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PerceivedObject",
+      "hash_string": "RIHS01_9351b3560cfd353bba12828f28191811e5b09e1ae207c927ad90ef1289b05e9a"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse",
+      "hash_string": "RIHS01_b87f639776ad0d0519fa285f8a07ae0e5325fc7ba0ccf0b25cf88fa603cbdad7"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ReferencePosition",
+      "hash_string": "RIHS01_5ee81ad92bc1bf6c19c66ef0590cd4cb21cd51b58d84feb3c22a038ec553597c"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/SensorInformation",
+      "hash_string": "RIHS01_ed2ba07d1d2e31273c22b05f3a365483a330d91b673fbd1a24df2b560757fc95"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/SensorInformationContainer",
+      "hash_string": "RIHS01_ded5d46db1fefe5a11dd5cdc0b192b7266d67a0599b77a15dccef98de6575e40"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Speed",
+      "hash_string": "RIHS01_79a46a893210b9da2d85d6ff1ad180e84a94058e841e0e0dda9a5fe66bf990ff"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/SpeedExtended",
+      "hash_string": "RIHS01_358b4e724c019a50e2b89f63aa5fa33ccee6beba56a19e6eca8554d379d86712"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/StationType",
+      "hash_string": "RIHS01_eed9826e69eb8b39d86e7c886c6e5ce7c61e428728b00e991a20f4d538622331"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleLength",
+      "hash_string": "RIHS01_f8f9344a5ed9a862d36b7ca24c3e34d839aa46673e5701e86d4ee9daf1bbb767"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleSensor",
+      "hash_string": "RIHS01_8f6a969cc91bb79030ad0f1df5e00374e91790bab305be2474ca87a221f5ed92"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleSensorProperty",
+      "hash_string": "RIHS01_b4d72e347854287bbf760a52616fe63961ebdb3576ea7fe07127edb5865aee70"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleWidth",
+      "hash_string": "RIHS01_5bd08e7a0d86c2aee4a6c1f2eaace39253c66d9ee5b80d1f9f95bdcd0b9d3774"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/WGS84Angle",
+      "hash_string": "RIHS01_b2045a3038e2c7da011e5c415daf1662982b4ca633596c9b6f49bb450b1c8baf"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/YawRate",
+      "hash_string": "RIHS01_9499a2f280a0f93c9c79e50d19deb2b9fa47aa3ae4e4581c35dc223a6cd52863"
+    },
+    {
+      "type_name": "std_msgs/msg/Header",
+      "hash_string": "RIHS01_f49fb3ae2cf070f793645ff749683ac6b06203e41c891e17701b1cb597ce6a01"
+    }
+  ]
+}

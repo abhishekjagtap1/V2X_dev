@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/Curvature.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module Curvature_Constants {
+      const int16 VALUE_RIGHTMOST = -1023;
+      const int16 VALUE_LEFTMOST = 1022;
+      const int16 VALUE_MIN = -1023;
+      const int16 VALUE_MAX = 1022;
+      const int16 VALUE_STRAIGHT = 0;
+      const int16 VALUE_UNAVAILABLE = 1023;
+      const uint8 CONFIDENCE_OUT_OF_RANGE = 6;
+      const uint8 CONFIDENCE_UNAVAILABLE = 7;
+    };
+    struct Curvature {
+      @verbatim (language="comment", text=
+        "m^-1")
+      int16 value;
+
+      uint8 confidence;
+    };
+  };
+};

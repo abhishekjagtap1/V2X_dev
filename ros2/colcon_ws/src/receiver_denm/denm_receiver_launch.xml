@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="v2x_stack" exec="v2x_stack_node"/>
+	<node pkg="v2x_stack_btp" exec="v2x_stack_btp_node" name="BTP_service"/>
+	<node pkg="v2x_stack_btp" exec="v2x_stack_btp_den_node" name="DEN_service">
+		<param name="cooldown" value="10.0"/>
+	</node>
+</launch>

@@ -1,0 +1,12 @@
+---
+- name: Setup prerequesites
+  import_tasks: prerequesites.yml
+  become: yes
+
+- name: Setup Mapproxy
+  import_tasks: mapproxy.yml
+  become: yes
+
+- name: Setup Nginx
+  import_tasks: nginx.yml
+  become: yes

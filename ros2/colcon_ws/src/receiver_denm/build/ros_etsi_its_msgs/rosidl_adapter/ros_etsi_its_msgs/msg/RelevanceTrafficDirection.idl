@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/RelevanceTrafficDirection.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module RelevanceTrafficDirection_Constants {
+      const uint8 ALL_TRAFFIC_DIRECTIONS = 0;
+      const uint8 UPSTREAM_TRAFFIC = 1;
+      const uint8 DOWNSTREAM_TRAFFIC = 2;
+      const uint8 OPPOSITE_TRAFFIC = 3;
+      @verbatim (language="comment", text=
+        "extension to encode optional traffic directions")
+      const uint8 UNAVAILABLE = 255;
+    };
+    struct RelevanceTrafficDirection {
+      uint8 value;
+    };
+  };
+};

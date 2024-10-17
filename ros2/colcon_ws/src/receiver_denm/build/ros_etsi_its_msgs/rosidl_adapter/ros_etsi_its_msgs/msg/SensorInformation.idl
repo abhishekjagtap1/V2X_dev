@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/SensorInformation.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/VehicleSensor.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct SensorInformation {
+      uint8 sensor_id;
+
+      @verbatim (language="comment", text=
+        "SensorType  INTEGER {undefined(0), radar(1), lidar(2), monovideo(3), stereovision(4), nightvision(5), ultrasonic(6), pmd(7), fusion(8), inductionloop(9), sphericalCamera(10), itssaggregation(11)} (0..15)")
+      int8 type;
+
+      @verbatim (language="comment", text=
+        "TODO add other type")
+      ros_etsi_its_msgs::msg::VehicleSensor detection_area;
+    };
+  };
+};

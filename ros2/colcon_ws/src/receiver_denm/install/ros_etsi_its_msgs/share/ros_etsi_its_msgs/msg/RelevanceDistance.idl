@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/RelevanceDistance.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module RelevanceDistance_Constants {
+      const uint8 LESS_THAN_50M = 0;
+      const uint8 LESS_THAN_100M = 1;
+      const uint8 LESS_THAN_200M = 2;
+      const uint8 LESS_THAN_500M = 3;
+      const uint8 LESS_THAN_1000M = 4;
+      const uint8 LESS_THAN_5KM = 5;
+      const uint8 LESS_THAN_10KM = 6;
+      const uint8 OVER_10KM = 7;
+      const uint8 UNAVAILABLE = 255;
+    };
+    struct RelevanceDistance {
+      uint8 value;
+    };
+  };
+};

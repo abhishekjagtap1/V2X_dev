@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/UDPMsgType.msg
+// generated code does not contain a copyright notice
+
+
+module v2x_stack_btp {
+  module msg {
+    @verbatim (language="comment", text=
+      "Version")
+    struct UDPMsgType {
+      uint8 version;
+
+      @verbatim (language="comment", text=
+        "MsgID")
+      uint8 msg_id;
+
+      @verbatim (language="comment", text=
+        "Msg Length")
+      uint8 msg_length;
+    };
+  };
+};

@@ -1,0 +1,54 @@
+---
+- name: Update repositories cache
+  apt:
+    update_cache: yes
+
+- name: Install Python
+  package:
+    name: python3
+    state: present
+
+- name: Install pip
+  package:
+    name: python3-pip
+    state: latest
+
+- name: Install vim
+  package:
+    name: vim
+    state: latest
+
+- name: Install python-pip
+  package:
+    name: python3-pip
+    state: latest
+
+- name: Install python-virtualenv
+  package:
+    name: python3-virtualenv
+    state: latest
+
+- name: Install python-yaml
+  package:
+    name: python3-yaml
+    state: latest
+
+- name: Install libgeos-dev
+  package:
+    name: libgeos-dev
+    state: latest
+
+- name: Install python-lxml
+  package:
+    name: python3-lxml
+    state: latest
+
+- name: Install libgdal-dev
+  package:
+    name: libgdal-dev
+    state: latest
+
+- name: Install python-shapely
+  package:
+    name: python3-shapely
+    state: latest

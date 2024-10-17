@@ -1,0 +1,14 @@
+{
+  "package_name": "v2x_stack",
+  "non_idl_tuples": [
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/Area.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/Location.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/CohdaInd.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/CohdaReq.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/UDPDataIndHdr.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/UDPMsgType.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/TrafficClass.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/GeoNetDestination.msg",
+    "/home/jagtap/ros2_dev/receiver_denm/src/ros_v2x_stack:msg/GeoNetArea.msg"
+  ]
+}

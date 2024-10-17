@@ -1,0 +1,208 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logos/favicon.ico">
+
+    <title>Visualisation</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="js/leaflet-zoomhome-master/leaflet.zoomhome.css"/>
+    <script src="js/leaflet/leaflet.js"></script>
+    <script src="js/roslib/roslib.min.js"></script>
+    <script src="js/ros-server/ros_server.js"></script>
+    <script src="js/markers/markers.js"></script>
+    <script src="js/rotatedMarker/leaflet.rotatedMarker.js"></script>
+    <script src="js/leaflet-zoomhome-master/leaflet.zoomhome.min.js"></script>
+
+</head>
+
+<body>
+
+   <div id="mapid" style="width: 100%; height: 100vh;"></div>
+   <script>
+
+       //Interesting repos for leaflet
+       //https://github.com/lethexa/leaflet-tracksymbol
+       //https://github.com/PowerPan/leaflet-ais-tracksymbol
+       //https://github.com/brandonxiang/leaflet.marker.highlight
+       //https://github.com/bbecquet/Leaflet.RotatedMarker
+       //https://github.com/mithron/leaflet.locationlist
+       //https://github.com/torfsen/leaflet.zoomhome
+
+       var ip= "172.16.1.1"; //Set to Alfonso IP
+       var map_style = "";
+
+       var carissma_location = [48.766006, 11.434759];                   
+       var mission_control_location = [48.754929, 11.477658]
+       //var carissma_location = [48.14669, 11.57978];
+       var home_location = mission_control_location;
+
+       var object_dict = {};
+       var event_dict = {};
+
+       function insertObject(object) {
+
+           var lat = object.position.latitude / Math.pow(10, 7);
+           var long = object.position.longitude / Math.pow(10, 7);
+
+           if(object.source !== "DENM"){
+               if(object.id in object_dict) {
+                   var info_marker = object_dict[object.id];
+                   info_marker.marker.setLatLng([lat, long]).update().setPopupContent(create_popup(object));
+                   if(need_heading(object)) {
+                       info_marker.marker.setRotationAngle(180.0 + object.heading.value / 10.0);
+                   }
+                   clearTimeout(info_marker.timeout_id);
+
+                   var id_time_out = create_timeout(object_dict, object, info_marker.marker);
+                   info_marker.timeout_id = id_time_out;
+
+               } else {
+                   var marker = L.marker([lat, long], get_marker_design(object),).addTo(mymap).bindPopup(create_popup(object)); //.on('click', clickZoom)
+                   var id_time_out = create_timeout(object_dict, object, marker);
+                   object_dict[object.id] = {timeout_id: id_time_out, marker: marker}
+               }
+
+           } else {
+               if(object.id in event_dict) {
+                   var info_event = event_dict[object.id];
+                   info_event.event.setLatLng([lat, long]).setRadius(object.radius_denm).redraw().addTo(mymap).setPopupContent(create_popup(object));
+                   clearTimeout(info_event.timeout_id);
+
+                   var id_time_out = create_timeout(info_event, object, info_event.event);
+                   info_event.timeout_id = id_time_out;
+
+               } else {
+                   var event = L.circle([lat, long], {
+                       color: 'red',
+                       fillColor: '#f03',
+                       fillOpacity: 0.3,
+                       radius: object.radius_denm
+                   }).addTo(mymap).bindPopup(create_popup(object));
+
+                   var id_time_out = create_timeout(event_dict, object, event);
+                   event_dict[object.id] = {timeout_id: id_time_out, event: event}
+               }
+           }
+       }
+
+       function insertIntersections(object) {
+            //Avoid to redraw static info :)
+            if(object["id"] in inter_dict){
+                inter = inter_dict[object["id"]]
+
+                if (inter["revision"] == object["revision"]){
+                    return;
+                }
+            } 
+
+            inter_dict[object["id"]] = object
+            var lat = object["refPoint"]["latitude"] / Math.pow(10, 7);
+            var long = object["refPoint"]["longitude"] / Math.pow(10, 7);
+            
+            inter_dict[object["id"]]["marker"] = L.marker([lat, long],).addTo(mymap).bindPopup("Id: " + object["id"]); //.on('click', clickZoom)
+            
+            for(lane_nb in object["laneSet"]){
+                lane = object["laneSet"][lane_nb]
+                if(lane["laneID"]){
+                    var positions = []
+                    for(pos in lane["nodeList"]){
+                        lat = lane["nodeList"][pos]["pos"]["latitude"]/Math.pow(10, 7);
+                        long = lane["nodeList"][pos]["pos"]["longitude"]/Math.pow(10, 7);
+                        positions.push([lat, long]);
+                    }
+                    if(!(object["id"] in first_post_list)){
+                        first_post_list[object["id"]] = {};
+                    }
+                    first_post_list[object["id"]][lane["laneID"]] = positions[0];
+                    colour_path = 'red';
+                    if(lane["laneDirection"] == 1){
+                        colour_path = 'grey';
+                    }
+                    else if(lane["laneDirection"] == 2){
+                        colour_path = '#CB8427'   
+                    } 
+                    else if(lane["laneDirection"] == 3){
+                        colour_path = 'violet';
+                    }
+                
+                    
+                    var polyline = L.polyline(positions, {color: colour_path, weight:8, opacity:0.7}).addTo(mymap).bindPopup("Id: " + lane["laneID"]);
+
+                    for(connect_nb in lane["connectsTo"]){
+                        connection = lane["connectsTo"][connect_nb];
+                        if(!(object["id"] in connect_list)){
+                            connect_list[object["id"]] = {};
+                        }
+                        if(!(connection["signalGroup"] in connect_list[object["id"]])){
+                            connect_list[object["id"]][connection["signalGroup"]] = {};
+                        }
+                        
+                        connect_list[object["id"]][connection["signalGroup"]][connection["connectionID"]] = {"signalGroup": connection["signalGroup"], "connectingLane": connection["connectingLane"], "idLane": lane["laneID"]};
+                    }
+                }
+            }
+            for(signal_group in connect_list[object["id"]]){
+                connection_group = connect_list[object["id"]][signal_group];
+                for(connection in connection_group){
+                    positions = [first_post_list[object["id"]][connection_group[connection]["idLane"]], first_post_list[object["id"]][connection_group[connection]["connectingLane"]]];
+                    
+                    var polyline = L.polyline(positions, {color: 'grey', dashArray:"4", weight:2, opacity:1.0}).addTo(mymap).bindPopup("Connection: " + connection);
+                    connect_list[object["id"]][signal_group][connection]["marker"] = polyline;
+                }
+            }    
+       }
+
+       establish_connection(ip, insertObject, 200);
+
+       var initial_zoom = 19;
+       var min_zoom = 10;
+
+       var mymap = L.map('mapid', {zoomControl: false}).setView(home_location, initial_zoom);
+       var zoomHome = L.Control.zoomHome();
+       zoomHome.addTo(mymap);
+
+
+       var southWest = L.latLng(49.771371, 9.881277),
+           northEast = L.latLng(49.813563, 9.970365),
+           bounds = L.latLngBounds(southWest, northEast);
+
+
+       var map_osm = L.tileLayer('http://'.concat(ip, ':8084/mapproxy/wmts/osm/osm_grid/{z}/{x}/{y}.png'), {
+           maxZoom: 25,
+           minZoom: min_zoom,
+           attribution: 'Free logo at <a href="https://www.logomakr.com/">LogoMakr</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+       });
+
+       var maps_choice = {
+           "OSM": map_osm,
+       };
+
+       var maps_localisation = {
+           "CARISSMA": carissma_location,
+       };
+
+       switch (map_style) {
+           default:
+               map_osm.addTo(mymap)
+       }
+
+       //mymap.setMaxBounds(bounds);
+
+       L.control.layers(maps_choice).addTo(mymap);
+
+       function clickZoom(e) {
+           mymap.setView(e.target.getLatLng(),20);
+       }
+
+
+</script>
+
+
+</body>
+</html>

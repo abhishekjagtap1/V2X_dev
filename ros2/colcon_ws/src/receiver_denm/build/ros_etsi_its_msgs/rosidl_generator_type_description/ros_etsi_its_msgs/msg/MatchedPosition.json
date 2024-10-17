@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/MatchedPosition",
+      "fields": [
+        {
+          "name": "lane_id",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/MatchedPosition",
+      "hash_string": "RIHS01_3cfada28c93ce6ac0fbe3a9c8410d9f3bb82c94ae1cc0447ebe030131bb73d7d"
+    }
+  ]
+}

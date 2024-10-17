@@ -1,0 +1,11 @@
+*.vagrant
+*/cmake-build-debug
+*/catkin_ws/devel
+*/colcon_ws/install
+*/colcon_ws/log
+ros2/colcon_ws/src/cmake-build-debug/
+ros2/colcon_ws/.catkin_workspace
+ros2/colcon_ws/build
+ros2/colcon_ws/log
+ros2/colcon_ws/install
+

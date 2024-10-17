@@ -1,0 +1,22 @@
+{
+  "package_name": "v2x_stack_btp",
+  "output_dir": "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_generator_type_description/v2x_stack_btp",
+  "idl_tuples": [
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/Area.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/Location.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/CohdaInd.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/CohdaReq.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/UDPDataIndHdr.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/UDPMsgType.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/TrafficClass.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/GeoNetDestination.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/GeoNetArea.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:msg/BtpDataIndication.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack_btp/rosidl_adapter/v2x_stack_btp:srv/BtpData.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

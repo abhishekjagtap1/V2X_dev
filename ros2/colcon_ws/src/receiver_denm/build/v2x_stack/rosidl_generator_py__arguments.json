@@ -1,0 +1,40 @@
+{
+  "package_name": "v2x_stack",
+  "output_dir": "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_generator_py/v2x_stack",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/Area.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/Location.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/CohdaInd.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/CohdaReq.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/UDPDataIndHdr.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/UDPMsgType.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/TrafficClass.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/GeoNetDestination.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack:msg/GeoNetArea.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/Area.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/Location.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/CohdaInd.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/CohdaReq.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/UDPDataIndHdr.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/UDPMsgType.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/TrafficClass.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/GeoNetDestination.idl",
+    "/home/jagtap/ros2_dev/receiver_denm/build/v2x_stack/rosidl_adapter/v2x_stack/msg/GeoNetArea.idl"
+  ]
+}

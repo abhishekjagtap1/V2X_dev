@@ -1,0 +1,20 @@
+[Unit]
+Description=Mapproxy
+After=network.target
+StartLimitIntervalSec=1
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=vagrant
+WorkingDirectory=/var/mapproxy/conf
+
+StartLimitBurst=5
+StartLimitIntervalSec=10
+
+ExecStart=/opt/mapproxy/venv_mapproxy/bin/gunicorn -k eventlet -w 8 -b :8080 config:application --no-sendfile
+
+
+[Install]
+WantedBy=multi-user.target

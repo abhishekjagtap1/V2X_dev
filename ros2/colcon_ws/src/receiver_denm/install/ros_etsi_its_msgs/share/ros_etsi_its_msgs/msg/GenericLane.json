@@ -1,0 +1,292 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/GenericLane",
+      "fields": [
+        {
+          "name": "lane_id",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "name",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "ingress_approach",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "egress_approach",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "lane_direction",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "node_list",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/NodeSetXY"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "connects_to",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/Connection"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Altitude",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Connection",
+        "fields": [
+          {
+            "name": "connecting_lane",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "remote_intersection",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "signal_group",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "connection_id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/NodeSetXY",
+        "fields": [
+          {
+            "name": "x",
+            "type": {
+              "type_id": 10,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "y",
+            "type": {
+              "type_id": 10,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "pos",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/ReferencePosition"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse",
+        "fields": [
+          {
+            "name": "semi_major_confidence",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "semi_minor_confidence",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "semi_major_orientation",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ReferencePosition",
+        "fields": [
+          {
+            "name": "latitude",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "longitude",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "position_confidence",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "altitude",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/Altitude"
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/GenericLane",
+      "hash_string": "RIHS01_e1c97a64a5b6e440ec9aee7653abbf4b025ddcf1dc4f0781e5492dd24a1fbcc0"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Altitude",
+      "hash_string": "RIHS01_654dd35c53feb7ef5c8d6fe7e02e54499cd55da32f1300fdec0c0b3e75e073a2"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Connection",
+      "hash_string": "RIHS01_dae00e30415a5c5ecd6bde512e1990e10271fb8d09a47cb124a9ebcf6e82f6d5"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/NodeSetXY",
+      "hash_string": "RIHS01_dfb7bf0e630a902b20f1e842bc6da56c50a16cf5c89a23cf88b6fa862b6dc4c3"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse",
+      "hash_string": "RIHS01_b87f639776ad0d0519fa285f8a07ae0e5325fc7ba0ccf0b25cf88fa603cbdad7"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ReferencePosition",
+      "hash_string": "RIHS01_5ee81ad92bc1bf6c19c66ef0590cd4cb21cd51b58d84feb3c22a038ec553597c"
+    }
+  ]
+}

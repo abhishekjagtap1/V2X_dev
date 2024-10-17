@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/CPM.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/ItsPduHeader.idl"
+#include "ros_etsi_its_msgs/msg/ListOfPerceivedObjects.idl"
+#include "ros_etsi_its_msgs/msg/OriginatingVehicleContainer.idl"
+#include "ros_etsi_its_msgs/msg/ReferencePosition.idl"
+#include "ros_etsi_its_msgs/msg/SensorInformationContainer.idl"
+#include "ros_etsi_its_msgs/msg/StationType.idl"
+#include "std_msgs/msg/Header.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct CPM {
+      std_msgs::msg::Header header;
+
+      ros_etsi_its_msgs::msg::ItsPduHeader its_header;
+
+      @verbatim (language="comment", text=
+        "CpmParameters container" "\n"
+        " milliseconds since 2004 modulo 2^16")
+      uint16 generation_delta_time;
+
+      @verbatim (language="comment", text=
+        "CpmParameters" "\n"
+        " CpmManagementContainer")
+      ros_etsi_its_msgs::msg::StationType station_type;
+
+      ros_etsi_its_msgs::msg::ReferencePosition reference_position;
+
+      @verbatim (language="comment", text=
+        "StationDataContainer" "\n"
+        "TODO extend to OriginatingRSUContainer")
+      ros_etsi_its_msgs::msg::OriginatingVehicleContainer originating_vehicle_container;
+
+      boolean has_sensor_information_container;
+
+      ros_etsi_its_msgs::msg::SensorInformationContainer sensor_information_container;
+
+      boolean has_list_of_perceived_object;
+
+      ros_etsi_its_msgs::msg::ListOfPerceivedObjects list_of_perceived_objects;
+
+      int32 number_of_perceived_objects;
+    };
+  };
+};

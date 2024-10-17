@@ -1,0 +1,320 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/ManagementContainer",
+      "fields": [
+        {
+          "name": "action_id",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/ActionID"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "detection_time",
+          "type": {
+            "type_id": 9,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "reference_time",
+          "type": {
+            "type_id": 9,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "termination",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "event_position",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/ReferencePosition"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "relevance_distance",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/RelevanceDistance"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "relevance_traffic_direction",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/RelevanceTrafficDirection"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "validity_duration",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "transmission_interval",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "station_type",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/StationType"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ActionID",
+        "fields": [
+          {
+            "name": "station_id",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Altitude",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse",
+        "fields": [
+          {
+            "name": "semi_major_confidence",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "semi_minor_confidence",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "semi_major_orientation",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ReferencePosition",
+        "fields": [
+          {
+            "name": "latitude",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "longitude",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "position_confidence",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "altitude",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/Altitude"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/RelevanceDistance",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/RelevanceTrafficDirection",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/StationType",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ManagementContainer",
+      "hash_string": "RIHS01_cd2defca530c7dd2a212121675a86cf8e737bda914347514117beacbf877a2e4"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ActionID",
+      "hash_string": "RIHS01_347d9045723b806abd32888909a8c172d01e8717328d5eee23a2a38f03365064"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Altitude",
+      "hash_string": "RIHS01_654dd35c53feb7ef5c8d6fe7e02e54499cd55da32f1300fdec0c0b3e75e073a2"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PositionConfidenceEllipse",
+      "hash_string": "RIHS01_b87f639776ad0d0519fa285f8a07ae0e5325fc7ba0ccf0b25cf88fa603cbdad7"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ReferencePosition",
+      "hash_string": "RIHS01_5ee81ad92bc1bf6c19c66ef0590cd4cb21cd51b58d84feb3c22a038ec553597c"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/RelevanceDistance",
+      "hash_string": "RIHS01_6514ee24e6ac6f92e48d65e42d508211120711886ebfa595a8ea0ca78d74743e"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/RelevanceTrafficDirection",
+      "hash_string": "RIHS01_148ca137170d914821da068e8436ec07a7b8fbf1d502437ee594edd81df4a30a"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/StationType",
+      "hash_string": "RIHS01_eed9826e69eb8b39d86e7c886c6e5ce7c61e428728b00e991a20f4d538622331"
+    }
+  ]
+}

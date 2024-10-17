@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/EventPoint.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/DeltaReferencePosition.idl"
+#include "ros_etsi_its_msgs/msg/InformationQuality.idl"
+#include "ros_etsi_its_msgs/msg/PathDeltaTime.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct EventPoint {
+      ros_etsi_its_msgs::msg::DeltaReferencePosition event_position;
+
+      ros_etsi_its_msgs::msg::PathDeltaTime event_delta_time;
+
+      ros_etsi_its_msgs::msg::InformationQuality information_quality;
+    };
+  };
+};

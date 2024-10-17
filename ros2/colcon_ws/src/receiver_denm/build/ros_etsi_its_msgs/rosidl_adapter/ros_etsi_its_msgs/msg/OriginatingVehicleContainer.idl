@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/OriginatingVehicleContainer.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/DriveDirection.idl"
+#include "ros_etsi_its_msgs/msg/Heading.idl"
+#include "ros_etsi_its_msgs/msg/LongitudinalAcceleration.idl"
+#include "ros_etsi_its_msgs/msg/Speed.idl"
+#include "ros_etsi_its_msgs/msg/VehicleLength.idl"
+#include "ros_etsi_its_msgs/msg/VehicleWidth.idl"
+#include "ros_etsi_its_msgs/msg/WGS84Angle.idl"
+#include "ros_etsi_its_msgs/msg/YawRate.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct OriginatingVehicleContainer {
+      ros_etsi_its_msgs::msg::Heading heading;
+
+      ros_etsi_its_msgs::msg::Speed speed;
+
+      boolean has_vehicle_orientation_angle;
+
+      ros_etsi_its_msgs::msg::WGS84Angle vehicle_orientation_angle;
+
+      ros_etsi_its_msgs::msg::DriveDirection drive_direction;
+
+      boolean has_vehicle_length;
+
+      ros_etsi_its_msgs::msg::VehicleLength vehicle_length;
+
+      boolean has_vehicle_width;
+
+      ros_etsi_its_msgs::msg::VehicleWidth vehicle_width;
+
+      boolean has_vehicle_height;
+
+      uint8 vehicle_height;
+
+      boolean has_longitudinal_acceleration;
+
+      ros_etsi_its_msgs::msg::LongitudinalAcceleration longitudinal_acceleration;
+
+      boolean has_yaw_rate;
+
+      ros_etsi_its_msgs::msg::YawRate yaw_rate;
+    };
+  };
+};

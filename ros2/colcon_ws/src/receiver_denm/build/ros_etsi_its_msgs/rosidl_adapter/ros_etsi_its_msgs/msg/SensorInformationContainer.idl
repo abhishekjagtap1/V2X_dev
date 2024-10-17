@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/SensorInformationContainer.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/SensorInformation.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct SensorInformationContainer {
+      sequence<ros_etsi_its_msgs::msg::SensorInformation> sensors_information;
+    };
+  };
+};

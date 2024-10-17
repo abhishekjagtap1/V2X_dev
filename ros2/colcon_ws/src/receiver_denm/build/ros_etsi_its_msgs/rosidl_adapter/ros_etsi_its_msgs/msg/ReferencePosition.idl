@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/ReferencePosition.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/Altitude.idl"
+#include "ros_etsi_its_msgs/msg/PositionConfidenceEllipse.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    module ReferencePosition_Constants {
+      const int64 LATITUDE_UNAVAILABLE = 900000001;
+      const int64 LONGITUDE_UNAVAILABLE = 1800000001;
+    };
+    struct ReferencePosition {
+      @verbatim (language="comment", text=
+        "0.1 micro degree")
+      int64 latitude;
+
+      @verbatim (language="comment", text=
+        "0.1 micro degree")
+      int64 longitude;
+
+      ros_etsi_its_msgs::msg::PositionConfidenceEllipse position_confidence;
+
+      ros_etsi_its_msgs::msg::Altitude altitude;
+    };
+  };
+};

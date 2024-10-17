@@ -1,0 +1,377 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/BasicVehicleContainerHighFrequency",
+      "fields": [
+        {
+          "name": "heading",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/Heading"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "speed",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/Speed"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "drive_direction",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/DriveDirection"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "vehicle_length",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/VehicleLength"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "vehicle_width",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/VehicleWidth"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "longitudinal_acceleration",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/LongitudinalAcceleration"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "curvature",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/Curvature"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "curvature_calculation_mode",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/CurvatureCalculationMode"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "yaw_rate",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/YawRate"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "has_acceleration_control",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "acceleration_control",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/AccelerationControl"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ros_etsi_its_msgs/msg/AccelerationControl",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Curvature",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/CurvatureCalculationMode",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/DriveDirection",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Heading",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/LongitudinalAcceleration",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/Speed",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/VehicleLength",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence_indication",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/VehicleWidth",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/YawRate",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "confidence",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/BasicVehicleContainerHighFrequency",
+      "hash_string": "RIHS01_a9391555be5e900dcefab55bbeef370526555705623415a52f5d5ad86843fd82"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/AccelerationControl",
+      "hash_string": "RIHS01_a38927671bc6f502ad3b71485f171e9064a9687e246c25c459c62e466868185a"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Curvature",
+      "hash_string": "RIHS01_d953bb8b7f8f9b68d0180cab4a081f1f89e43c49fb00b8deeb3e71edfb8bf914"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/CurvatureCalculationMode",
+      "hash_string": "RIHS01_f4fd60cfe74896b9a05dc122a163dfd7fea065699e1fa8fa18270710099ae0cf"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/DriveDirection",
+      "hash_string": "RIHS01_534366d955a615b97a37fbaec04db50ea23f107505a56f92a09e38c92e82017e"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Heading",
+      "hash_string": "RIHS01_1682df3ef7895b6a10fb451795d3700d215d7b2a7da0ab947a7969c93bb51d9c"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/LongitudinalAcceleration",
+      "hash_string": "RIHS01_3426c79ad24d00e5fa3ad8e66a186935019291f1bc3311dfa015bdbdb370d8e8"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/Speed",
+      "hash_string": "RIHS01_79a46a893210b9da2d85d6ff1ad180e84a94058e841e0e0dda9a5fe66bf990ff"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleLength",
+      "hash_string": "RIHS01_f8f9344a5ed9a862d36b7ca24c3e34d839aa46673e5701e86d4ee9daf1bbb767"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleWidth",
+      "hash_string": "RIHS01_5bd08e7a0d86c2aee4a6c1f2eaace39253c66d9ee5b80d1f9f95bdcd0b9d3774"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/YawRate",
+      "hash_string": "RIHS01_9499a2f280a0f93c9c79e50d19deb2b9fa47aa3ae4e4581c35dc223a6cd52863"
+    }
+  ]
+}

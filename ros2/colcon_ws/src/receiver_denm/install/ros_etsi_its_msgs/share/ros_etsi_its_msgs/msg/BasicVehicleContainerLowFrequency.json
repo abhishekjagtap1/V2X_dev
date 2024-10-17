@@ -1,0 +1,191 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/BasicVehicleContainerLowFrequency",
+      "fields": [
+        {
+          "name": "vehicle_role",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/VehicleRole"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "exterior_lights",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/ExteriorLights"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "path_history",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ros_etsi_its_msgs/msg/PathHistory"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ros_etsi_its_msgs/msg/DeltaReferencePosition",
+        "fields": [
+          {
+            "name": "delta_latitude",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "delta_longitude",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "delta_altitude",
+            "type": {
+              "type_id": 4,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/ExteriorLights",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/PathDeltaTime",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 5,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/PathHistory",
+        "fields": [
+          {
+            "name": "points",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/PathPoint"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/PathPoint",
+        "fields": [
+          {
+            "name": "path_position",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/DeltaReferencePosition"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "path_delta_time",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "ros_etsi_its_msgs/msg/PathDeltaTime"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "ros_etsi_its_msgs/msg/VehicleRole",
+        "fields": [
+          {
+            "name": "value",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/BasicVehicleContainerLowFrequency",
+      "hash_string": "RIHS01_08fc773803d40c1ddbfffcbcad6f9e44c7ecb88c263ee4a04eb8b7b94b7f0405"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/DeltaReferencePosition",
+      "hash_string": "RIHS01_ce96fb2cfd2b17ae246cdbae39ee2ddabcfd95cc6a3d70b2e1c62f2caf001b96"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/ExteriorLights",
+      "hash_string": "RIHS01_97f2823febf9041b449b5bd77ecef67c6742b19828e6c46e48cad481798275c7"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PathDeltaTime",
+      "hash_string": "RIHS01_a7c1a66b4e89f67baba65ee4f6e8a5f7937a81a28025ace12fbe0329e085f63f"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PathHistory",
+      "hash_string": "RIHS01_1b60a64e3bceae9909d5bbf8778a2cbb682efa34c7e0f4c438a6219d7dadf8d4"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/PathPoint",
+      "hash_string": "RIHS01_439db2dabaea418eae04a3f683a421e2e7bb51ab76486e35a079df72d8b3bb1d"
+    },
+    {
+      "type_name": "ros_etsi_its_msgs/msg/VehicleRole",
+      "hash_string": "RIHS01_a6ce7e0ef1d9310ecf5c6e806015ee815ddd2f976c024badb011f3cddc47b0c3"
+    }
+  ]
+}

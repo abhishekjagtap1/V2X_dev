@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/ObjectDistanceWithConfidence.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module ObjectDistanceWithConfidence_Constants {
+      @verbatim (language="comment", text=
+        "zeroPointZeroOneMeter(1), oneMeter(100), outOfRange(101), unavailable(102)} (0..102)")
+      const int8 CONFIDENCE_CM = 1;
+      const int8 CONFIDENCE_M = 100;
+      const int8 CONFIDENCE_OUT_OF_RANGE = 101;
+      const int8 CONFIDENCE_UNAVAILABLE = 102;
+    };
+    struct ObjectDistanceWithConfidence {
+      @verbatim (language="comment", text=
+        "zeroPointZeroOneMeter(1), oneMeter(100)} (-132768..132767)")
+      int32 value;
+
+      int8 confidence;
+    };
+  };
+};

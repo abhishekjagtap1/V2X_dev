@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/ExteriorLights.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module ExteriorLights_Constants {
+      const uint8 LOW_BEAM_HEADLIGHTS = 1;
+      const uint8 HIGH_BEAM_HEADLIGHTS = 2;
+      const uint8 LEFT_TURN_SIGNAL = 4;
+      const uint8 RIGHT_TURN_SIGNAL = 8;
+      const uint8 DAYTIME_RUNNING_LIGHTS = 16;
+      const uint8 REVERSE_LIGHT = 32;
+      const uint8 FOG_LIGHT = 64;
+      const uint8 PARKING_LIGHTS = 128;
+    };
+    struct ExteriorLights {
+      uint8 value;
+    };
+  };
+};

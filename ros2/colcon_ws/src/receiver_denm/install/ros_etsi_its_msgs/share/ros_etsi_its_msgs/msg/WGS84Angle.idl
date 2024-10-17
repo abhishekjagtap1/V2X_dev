@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/WGS84Angle.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module WGS84Angle_Constants {
+      const int16 WGS84NORTH = 0;
+      const int16 WGS84EAST = 900;
+      const int16 WGS84SOUTH = 2700;
+      const int16 VALUE_UNAVAILABLE = 3601;
+      const uint8 CONFIDENCE_ZERO_POINT_ONE_DEGREE = 1;
+      const uint8 CONFIDENCE_ONE_DEGREE = 10;
+      const uint8 CONFIDENCE_OUT_OF_RANGE = 126;
+      const uint8 CONFIDENCE_UNAVAILABLE = 127;
+    };
+    struct WGS84Angle {
+      @verbatim (language="comment", text=
+        "decidegree")
+      int16 value;
+
+      uint8 confidence;
+    };
+  };
+};

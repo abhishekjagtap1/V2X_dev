@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/CurvatureCalculationMode.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module CurvatureCalculationMode_Constants {
+      const uint8 YAW_RATE_USED = 0;
+      const uint8 YAW_RATE_NOT_USED = 1;
+      const uint8 UNAVAILABLE = 2;
+    };
+    struct CurvatureCalculationMode {
+      uint8 value;
+    };
+  };
+};

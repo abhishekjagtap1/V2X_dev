@@ -1,0 +1,36 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/area__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/area__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/cohda_ind__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/cohda_ind__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/cohda_req__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/cohda_req__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/geo_net_area__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/geo_net_area__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/geo_net_destination__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/geo_net_destination__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/location__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/location__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/traffic_class__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/traffic_class__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/udp_data_ind_hdr__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/udp_data_ind_hdr__type_support.cpp.o.d"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/udp_msg_type__type_support.cpp.o"
+  "CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_stack/msg/udp_msg_type__type_support.cpp.o.d"
+  "libv2x_stack__rosidl_typesupport_cpp.pdb"
+  "libv2x_stack__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/v2x_stack/msg/area__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/cohda_ind__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/cohda_req__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/geo_net_area__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/geo_net_destination__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/location__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/traffic_class__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/udp_data_ind_hdr__type_support.cpp"
+  "rosidl_typesupport_cpp/v2x_stack/msg/udp_msg_type__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/v2x_stack__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

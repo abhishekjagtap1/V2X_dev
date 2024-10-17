@@ -1,0 +1,83 @@
+---
+- name: Create mapproxy repository
+  file:
+      path: /opt/mapproxy
+      state: directory
+      mode: '0755'
+
+- name: Create mapproxy repository for configuration
+  file:
+      path: /var/mapproxy/conf
+      state: directory
+      mode: '0755'
+      owner: vagrant
+
+
+- name: Create mapproxy repository to cache data
+  file:
+      path: /var/mapproxy/cache_data
+      state: directory
+      mode: '0755'
+      owner: vagrant
+
+- name: Setup virtualenv
+  command:
+    cmd: virtualenv -p /usr/bin/python3 --system-site-packages /opt/mapproxy/venv_mapproxy
+    creates: "/opt/mapproxy/venv_mapproxy"
+
+- pip:
+    name: Pillow
+    virtualenv: /opt/mapproxy/venv_mapproxy
+
+- pip:
+    name: MapProxy
+    virtualenv: /opt/mapproxy/venv_mapproxy
+
+- pip:
+    name: gunicorn
+    virtualenv: /opt/mapproxy/venv_mapproxy
+    version: 20.1.0
+
+- pip:
+    name: eventlet
+    virtualenv: /opt/mapproxy/venv_mapproxy
+    version: 0.30.2
+
+- name: Copy MapProxy configuration files
+  copy:
+    src: ../files/mapproxy/
+    dest: /var/mapproxy/conf/
+
+- name: Create mapproxy repository to cache data
+  file:
+      path: /var/log/mapproxy
+      state: directory
+      mode: '0755'
+      owner: vagrant
+
+- name: Create mapproxy log file 1
+  file:
+    path: /var/log/mapproxy/source-requests.log
+    state: touch
+    mode: u=rw,g=rw,o=rw
+    owner: vagrant
+
+- name: Create mapproxy log file 2
+  file:
+    path: /var/log/mapproxy/mapproxy.log
+    state: touch
+    mode: u=rw,g=r,o=r
+    owner: vagrant
+
+- name: Copy mapproxy system file
+  copy:
+    src: ../files/mapproxy/mapproxy.service
+    dest: /etc/systemd/system/
+    mode: u=rw,g=r,o=r
+    owner: vagrant
+
+- name: Make sure Mapproxy is running
+  systemd:
+    state: started
+    name: mapproxy
+    enabled: yes

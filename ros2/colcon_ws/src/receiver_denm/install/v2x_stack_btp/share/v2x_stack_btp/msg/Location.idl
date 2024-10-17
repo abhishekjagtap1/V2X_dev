@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/Location.msg
+// generated code does not contain a copyright notice
+
+
+module v2x_stack_btp {
+  module msg {
+    @verbatim (language="comment", text=
+      "Address of destination station")
+    struct Location {
+      uint64 destination;
+
+      @verbatim (language="comment", text=
+        "WGS-84 latitude of the GeoAdhoc router expressed in 1/10 micro degree")
+      int32 lat;
+
+      @verbatim (language="comment", text=
+        "WGS84 longitude of the GeoAdhoc router expressed in 1/10 micro degree")
+      int32 lon;
+    };
+  };
+};

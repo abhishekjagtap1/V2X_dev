@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/ObjectClassDescription.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module ObjectClassDescription_Constants {
+      const int32 TYPE_UNKNOWN = 0;
+      const int32 TYPE_MOPED = 1;
+      const int32 TYPE_MOTORCYCLE = 2;
+      const int32 TYPE_PASSENGERCAR = 3;
+      const int32 TYPE_BUS = 3;
+      const int32 TYPE_LIGHTRUCK = 3;
+    };
+    @verbatim (language="comment", text=
+      "TODO apply the correct one")
+    struct ObjectClassDescription {
+      int32 type;
+    };
+  };
+};

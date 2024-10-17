@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros_etsi_its_msgs/msg/CurvatureCalculationMode",
+      "fields": [
+        {
+          "name": "value",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros_etsi_its_msgs/msg/CurvatureCalculationMode",
+      "hash_string": "RIHS01_f4fd60cfe74896b9a05dc122a163dfd7fea065699e1fa8fa18270710099ae0cf"
+    }
+  ]
+}

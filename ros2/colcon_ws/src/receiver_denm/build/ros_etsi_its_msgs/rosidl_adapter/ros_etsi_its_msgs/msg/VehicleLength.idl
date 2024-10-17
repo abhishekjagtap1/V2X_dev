@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/VehicleLength.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module VehicleLength_Constants {
+      const uint16 VALUE_TEN_CENTIMETERS = 1;
+      const uint16 VALUE_OUT_OF_RANGE = 1022;
+      const uint16 VALUE_UNAVAILABLE = 1023;
+      const uint8 CONFIDENCE_INDICATION_NO_TRAILER = 0;
+      const uint8 CONFIDENCE_INDICATION_TRAILER_WITH_KNOWN_LENGTH = 1;
+      const uint8 CONFIDENCE_INDICATION_TRAILER_WITH_UNKNOWN_LENGTH = 2;
+      const uint8 CONFIDENCE_INDICATION_UNKNOWN_TRAILER_PRESENCE = 3;
+      const uint8 CONFIDENCE_INDICATION_UNAVAILABLE = 4;
+    };
+    struct VehicleLength {
+      @verbatim (language="comment", text=
+        "0.1 meter")
+      uint16 value;
+
+      uint8 confidence_indication;
+    };
+  };
+};

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/BasicVehicleContainerLowFrequency.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/ExteriorLights.idl"
+#include "ros_etsi_its_msgs/msg/PathHistory.idl"
+#include "ros_etsi_its_msgs/msg/VehicleRole.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct BasicVehicleContainerLowFrequency {
+      ros_etsi_its_msgs::msg::VehicleRole vehicle_role;
+
+      ros_etsi_its_msgs::msg::ExteriorLights exterior_lights;
+
+      ros_etsi_its_msgs::msg::PathHistory path_history;
+    };
+  };
+};

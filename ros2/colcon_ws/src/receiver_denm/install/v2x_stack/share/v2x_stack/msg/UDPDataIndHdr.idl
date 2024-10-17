@@ -1,0 +1,77 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack/msg/UDPDataIndHdr.msg
+// generated code does not contain a copyright notice
+
+#include "v2x_stack/msg/Area.idl"
+#include "v2x_stack/msg/Location.idl"
+
+module v2x_stack {
+  module msg {
+    typedef uint8 uint8__32[32];
+    @verbatim (language="comment", text=
+      "BTP Type")
+    struct UDPDataIndHdr {
+      uint8 btp_type;
+
+      @verbatim (language="comment", text=
+        "GN Packet Transport type")
+      uint8 pkt_transport;
+
+      @verbatim (language="comment", text=
+        "GN Traffic class")
+      uint8 traffic_class;
+
+      @verbatim (language="comment", text=
+        "GN Maximum Packet Lifetime (seconds)")
+      uint8 max_pkt_life_time;
+
+      @verbatim (language="comment", text=
+        "BTP Destination port (BTP-A & BTP-B BTPTypes)")
+      uint16 dest_port;
+
+      @verbatim (language="comment", text=
+        "BTP Additional Port Information" "\n"
+        "Source Port (BTP-A)")
+      uint16 src_port;
+
+      @verbatim (language="comment", text=
+        "Destination Port Info (BTP-B)")
+      uint16 dest_info;
+
+      @verbatim (language="comment", text=
+        "Location for GeoUnicast")
+      v2x_stack::msg::Location location;
+
+      @verbatim (language="comment", text=
+        "Area for GBC or GAC")
+      v2x_stack::msg::Area area;
+
+      @verbatim (language="comment", text=
+        "GN Security Type")
+      uint8 sec_profile;
+
+      @verbatim (language="comment", text=
+        "For Secure Packets (SecProfile != UDPRX_SEC_NONE):" "\n"
+        "Result of Security Parsing @sa eC2XSEC_ParserResult")
+      uint8 parser_result;
+
+      uint8 verification_result;
+
+      uint8 ssp_len;
+
+      uint32 aid;
+
+      @verbatim (language="comment", text=
+        "SSP Bits/Data")
+      uint8__32 ssp_bits;
+
+      @verbatim (language="comment", text=
+        "CertID8")
+      uint8__32 cert_id;
+
+      @verbatim (language="comment", text=
+        "The length in octets of the 'on-the-air' frame data")
+      uint16 length;
+    };
+  };
+};

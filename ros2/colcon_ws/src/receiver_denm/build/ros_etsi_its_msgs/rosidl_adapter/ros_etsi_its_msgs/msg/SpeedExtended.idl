@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/SpeedExtended.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    module SpeedExtended_Constants {
+      const int32 VALUE_STANDSTILL = 0;
+      const int32 VALUE_ONE_CENTIMETER_PER_SECOND = 1;
+      const int32 VALUE_UNAVAILABLE = 16383;
+      const uint8 CONFIDENCE_OUT_OF_RANGE = 126;
+      const uint8 CONFIDENCE_UNAVAILABLE = 127;
+    };
+    struct SpeedExtended {
+      @verbatim (language="comment", text=
+        "0.01 m/s")
+      int32 value;
+
+      @verbatim (language="comment", text=
+        "0.01 m/s")
+      uint8 confidence;
+    };
+  };
+};

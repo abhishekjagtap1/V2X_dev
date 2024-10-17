@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/Connection.msg
+// generated code does not contain a copyright notice
+
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct Connection {
+      uint16 connecting_lane;
+
+      uint16 remote_intersection;
+
+      uint8 signal_group;
+
+      uint8 connection_id;
+    };
+  };
+};

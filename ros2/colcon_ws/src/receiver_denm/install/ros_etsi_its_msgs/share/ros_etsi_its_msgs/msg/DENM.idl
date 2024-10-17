@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/DENM.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/ItsPduHeader.idl"
+#include "ros_etsi_its_msgs/msg/LocationContainer.idl"
+#include "ros_etsi_its_msgs/msg/ManagementContainer.idl"
+#include "ros_etsi_its_msgs/msg/SituationContainer.idl"
+#include "std_msgs/msg/Header.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct DENM {
+      std_msgs::msg::Header header;
+
+      ros_etsi_its_msgs::msg::ItsPduHeader its_header;
+
+      ros_etsi_its_msgs::msg::ManagementContainer management;
+
+      boolean has_situation;
+
+      ros_etsi_its_msgs::msg::SituationContainer situation;
+
+      boolean has_location;
+
+      ros_etsi_its_msgs::msg::LocationContainer location;
+    };
+  };
+};

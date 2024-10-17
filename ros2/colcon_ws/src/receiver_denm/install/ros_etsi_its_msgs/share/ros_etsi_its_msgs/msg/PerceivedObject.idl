@@ -1,0 +1,78 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/PerceivedObject.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "ros_etsi_its_msgs/msg/DynamicStatus.idl"
+#include "ros_etsi_its_msgs/msg/LateralAcceleration.idl"
+#include "ros_etsi_its_msgs/msg/LongitudinalAcceleration.idl"
+#include "ros_etsi_its_msgs/msg/MatchedPosition.idl"
+#include "ros_etsi_its_msgs/msg/ObjectDimension.idl"
+#include "ros_etsi_its_msgs/msg/ObjectDistanceWithConfidence.idl"
+#include "ros_etsi_its_msgs/msg/ObjectRefPoint.idl"
+#include "ros_etsi_its_msgs/msg/SpeedExtended.idl"
+#include "ros_etsi_its_msgs/msg/StationType.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct PerceivedObject {
+      uint8 object_id;
+
+      boolean has_sensor_id_list;
+
+      sequence<uint8> sensor_id_list;
+
+      builtin_interfaces::msg::Time time_of_detection;
+
+      @verbatim (language="comment", text=
+        "INTEGER {oneMilliSecond(1)} (-1500..1500)")
+      int32 time_of_measurement;
+
+      @verbatim (language="comment", text=
+        "{oneMiliSec(1)} (0..1500)")
+      int32 object_age;
+
+      @verbatim (language="comment", text=
+        "unknown(0), onePercent(1), oneHundredPercent(100), unavailable(101)} (0..101)")
+      int32 object_confidence;
+
+      ros_etsi_its_msgs::msg::ObjectDistanceWithConfidence x_distance;
+
+      ros_etsi_its_msgs::msg::ObjectDistanceWithConfidence y_distance;
+
+      ros_etsi_its_msgs::msg::ObjectDistanceWithConfidence z_distance;
+
+      ros_etsi_its_msgs::msg::SpeedExtended x_speed;
+
+      ros_etsi_its_msgs::msg::SpeedExtended y_speed;
+
+      ros_etsi_its_msgs::msg::SpeedExtended z_speed;
+
+      ros_etsi_its_msgs::msg::LongitudinalAcceleration x_acceleration;
+
+      ros_etsi_its_msgs::msg::LateralAcceleration y_acceleration;
+
+      boolean has_planar_object_dimension1;
+
+      ros_etsi_its_msgs::msg::ObjectDimension planar_object_dimension1;
+
+      boolean has_planar_object_dimension2;
+
+      ros_etsi_its_msgs::msg::ObjectDimension planar_object_dimension2;
+
+      boolean has_vertical_object_dimension;
+
+      ros_etsi_its_msgs::msg::ObjectDimension vertical_object_dimension;
+
+      ros_etsi_its_msgs::msg::ObjectRefPoint object_ref_point;
+
+      ros_etsi_its_msgs::msg::DynamicStatus dynamic_status;
+
+      ros_etsi_its_msgs::msg::StationType classification;
+
+      ros_etsi_its_msgs::msg::MatchedPosition matched_position;
+
+      float object_angle;
+    };
+  };
+};

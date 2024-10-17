@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/ManagementContainer.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/ActionID.idl"
+#include "ros_etsi_its_msgs/msg/ReferencePosition.idl"
+#include "ros_etsi_its_msgs/msg/RelevanceDistance.idl"
+#include "ros_etsi_its_msgs/msg/RelevanceTrafficDirection.idl"
+#include "ros_etsi_its_msgs/msg/StationType.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    module ManagementContainer_Constants {
+      const uint8 TERMINATION_CANCELLATION = 0;
+      const uint8 TERMINATION_NEGATION = 1;
+      const uint8 TERMINATION_UNAVAILABLE = 255;
+      const uint32 TRANSMISSION_INTERVAL_ONE_MILLISECOND = 1;
+      const uint32 TRANSMISSION_INTERVAL_TEN_SECONDS = 10000;
+      const uint32 TRANSMISSION_INTERVAL_UNAVAILABLE = 0;
+      const uint32 VALIDITY_DURATION_DEFAULT = 600;
+      const uint32 VALIDITY_DURATION_TIME_OF_DETECTION = 0;
+      const uint32 VALIDITY_DURATION_ONE_SECOND_AFTER_DETECTION = 1;
+    };
+    struct ManagementContainer {
+      ros_etsi_its_msgs::msg::ActionID action_id;
+
+      @verbatim (language="comment", text=
+        "ms since 2004")
+      uint64 detection_time;
+
+      @verbatim (language="comment", text=
+        "ms since 2004")
+      uint64 reference_time;
+
+      uint8 termination;
+
+      ros_etsi_its_msgs::msg::ReferencePosition event_position;
+
+      ros_etsi_its_msgs::msg::RelevanceDistance relevance_distance;
+
+      ros_etsi_its_msgs::msg::RelevanceTrafficDirection relevance_traffic_direction;
+
+      @verbatim (language="comment", text=
+        "seconds")
+      uint32 validity_duration;
+
+      @verbatim (language="comment", text=
+        "milliseconds")
+      uint32 transmission_interval;
+
+      ros_etsi_its_msgs::msg::StationType station_type;
+    };
+  };
+};

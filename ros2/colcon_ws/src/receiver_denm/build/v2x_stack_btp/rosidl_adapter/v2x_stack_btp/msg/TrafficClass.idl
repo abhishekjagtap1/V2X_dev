@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/TrafficClass.msg
+// generated code does not contain a copyright notice
+
+
+module v2x_stack_btp {
+  module msg {
+    module TrafficClass_Constants {
+      const uint8 ID_DCC_DP0 = 0;
+      const uint8 ID_DCC_DP1 = 1;
+      const uint8 ID_DCC_DP2 = 2;
+      const uint8 ID_DCC_DP3 = 3;
+    };
+    struct TrafficClass {
+      boolean store_carry_forwarding;
+
+      boolean channel_offloading;
+
+      @verbatim (language="comment", text=
+        "only lower six bits are used")
+      uint8 id;
+    };
+  };
+};

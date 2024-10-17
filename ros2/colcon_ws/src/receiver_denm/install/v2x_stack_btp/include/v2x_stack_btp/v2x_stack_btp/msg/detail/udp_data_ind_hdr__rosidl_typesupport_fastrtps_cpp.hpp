@@ -1,0 +1,100 @@
+// generated from rosidl_typesupport_fastrtps_cpp/resource/idl__rosidl_typesupport_fastrtps_cpp.hpp.em
+// with input from v2x_stack_btp:msg/UDPDataIndHdr.idl
+// generated code does not contain a copyright notice
+
+#ifndef V2X_STACK_BTP__MSG__DETAIL__UDP_DATA_IND_HDR__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
+#define V2X_STACK_BTP__MSG__DETAIL__UDP_DATA_IND_HDR__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_
+
+#include <cstddef>
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "v2x_stack_btp/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h"
+#include "v2x_stack_btp/msg/detail/udp_data_ind_hdr__struct.hpp"
+
+#ifndef _WIN32
+# pragma GCC diagnostic push
+# pragma GCC diagnostic ignored "-Wunused-parameter"
+# ifdef __clang__
+#  pragma clang diagnostic ignored "-Wdeprecated-register"
+#  pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
+# endif
+#endif
+#ifndef _WIN32
+# pragma GCC diagnostic pop
+#endif
+
+#include "fastcdr/Cdr.h"
+
+namespace v2x_stack_btp
+{
+
+namespace msg
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+cdr_serialize(
+  const v2x_stack_btp::msg::UDPDataIndHdr & ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  v2x_stack_btp::msg::UDPDataIndHdr & ros_message);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+get_serialized_size(
+  const v2x_stack_btp::msg::UDPDataIndHdr & ros_message,
+  size_t current_alignment);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+max_serialized_size_UDPDataIndHdr(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+cdr_serialize_key(
+  const v2x_stack_btp::msg::UDPDataIndHdr & ros_message,
+  eprosima::fastcdr::Cdr &);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+get_serialized_size_key(
+  const v2x_stack_btp::msg::UDPDataIndHdr & ros_message,
+  size_t current_alignment);
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+max_serialized_size_key_UDPDataIndHdr(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace msg
+
+}  // namespace v2x_stack_btp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_v2x_stack_btp
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, v2x_stack_btp, msg, UDPDataIndHdr)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // V2X_STACK_BTP__MSG__DETAIL__UDP_DATA_IND_HDR__ROSIDL_TYPESUPPORT_FASTRTPS_CPP_HPP_

@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/CohdaInd.msg
+// generated code does not contain a copyright notice
+
+#include "v2x_stack_btp/msg/UDPDataIndHdr.idl"
+#include "v2x_stack_btp/msg/UDPMsgType.idl"
+
+module v2x_stack_btp {
+  module msg {
+    @verbatim (language="comment", text=
+      "Message type")
+    struct CohdaInd {
+      v2x_stack_btp::msg::UDPMsgType type;
+
+      @verbatim (language="comment", text=
+        "Message header")
+      v2x_stack_btp::msg::UDPDataIndHdr header;
+
+      @verbatim (language="comment", text=
+        "Payload")
+      sequence<uint8> payload;
+    };
+  };
+};

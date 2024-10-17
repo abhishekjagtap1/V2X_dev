@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_etsi_its_msgs/msg/MovementState.msg
+// generated code does not contain a copyright notice
+
+#include "ros_etsi_its_msgs/msg/MovementEvent.idl"
+
+module ros_etsi_its_msgs {
+  module msg {
+    struct MovementState {
+      uint8 signal_group;
+
+      sequence<ros_etsi_its_msgs::msg::MovementEvent> state_time_speed;
+    };
+  };
+};

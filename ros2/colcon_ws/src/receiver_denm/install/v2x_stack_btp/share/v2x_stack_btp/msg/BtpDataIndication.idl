@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_stack_btp/msg/BtpDataIndication.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "std_msgs/msg/Header.idl"
+#include "v2x_stack_btp/msg/GeoNetDestination.idl"
+#include "v2x_stack_btp/msg/TrafficClass.idl"
+
+module v2x_stack_btp {
+  module msg {
+    module BtpDataIndication_Constants {
+      const uint8 BTP_TYPE_A = 1;
+      const uint8 BTP_TYPE_INTERACTIVE = 1;
+      const uint8 BTP_TYPE_B = 2;
+      const uint8 BTP_TYPE_NON_INTERACTIVE = 2;
+    };
+    struct BtpDataIndication {
+      std_msgs::msg::Header header;
+
+      uint8 btp_type;
+
+      @verbatim (language="comment", text=
+        "only valid for BTP-A")
+      uint16 source_port;
+
+      uint16 destination_port;
+
+      @verbatim (language="comment", text=
+        "only valid for BTP-B")
+      uint16 destination_port_info;
+
+      v2x_stack_btp::msg::GeoNetDestination destination;
+
+      uint32 its_aid;
+
+      sequence<uint8> permissions;
+
+      v2x_stack_btp::msg::TrafficClass traffic_class;
+
+      builtin_interfaces::msg::Duration remaining_packet_lifetime;
+
+      sequence<uint8> data;
+    };
+  };
+};
