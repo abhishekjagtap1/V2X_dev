@@ -2,16 +2,12 @@
 
 ## All you need is VVF
 
-VVF-v2 provides a visualisation tool for CAM, CPM, and DENM
+VVF-v2 provides a visualisation tool for CAM, CPM, and DENM.
+
 All the packages relavant to Testfield and Car2x Car are consolidated in a single workspace.
 
-VVF is composed of 8 different packages:
-* A NGinx server for the welcome and map webpage
-* A Mapproxy proxy to cache the tiles
-* A RosBridge server to send the objects (from CAM, CPM, DENM) directly from a ROS topic.  
+## Functionality
 
-
-VVF provides a visualisation tool for CAM, CPM, and DENM (still ongoing). 
 It relies on Mapproxy, OSM, and Leaflet to visualise objects on the map. The advantage of VVF is that from the moment the server has cached the map tiles, no internet connection is required anymore.
 Any device that has a web browser (Firefox, Brave, and Chrome tested) can visualise the results when connected to the appropriate network.
 
@@ -56,10 +52,9 @@ take around 5 to 10 min to complete. If successfully done, you should now see a 
 Execute "Vagrant up" in the root of this git repository. 
 
 ### V2X communications
-This framework relies on the [ros_etsi_its_msgs](https://github.com/CoFra-CaLa/ros_etsi_its_msgs) package.  
+This framework relies on the [ros_etsi_its_msgs](https://car-gitlab.rz.fh-ingolstadt.de/car2x/ros2_etsi_msgs.git) package.  
 V2X communications are implemented thanks to the ROS integration of [Vanetza](https://github.com/riebl/vanetza).
-This ROS implementation is currently not available, if you want more information, please contact us.
-It can currently generate CAM, CPM, and DENM using Cohda and Autotalks boxes.
+The Framework can currently handle and process CAM, CPM, and DENM using Cohda 
 
 
 ### Visualisation
@@ -71,29 +66,18 @@ A map-manager node is responsible to collect information from the map-providers 
 
 ### Requirements for the Visualisation 
 There are some requirements before compiling the project:  
-1. [ROS](https://www.ros.org/) (tested on melodic and noetic)  
+1. [ROS](https://www.ros.org/) (tested on Jazzy - ROS2)  
 2. [Rosbridge](http://wiki.ros.org/rosbridge_suite)
-3. [ros_etsi_its_msgs](https://github.com/CoFra-CaLa/ros_etsi_its_msgs)
+3. [ros_etsi_its_msgs](https://car-gitlab.rz.fh-ingolstadt.de/car2x/ros2_etsi_msgs.git)
 
 
-# Credits
-This work is part of the CoFra-CaLa organization within CARISSMA & THI in Ingolstadt.
-Main contributors are Quentin Delooz, Marc Armansin, and Christina Obermeier
 
 # List of improvements/bugs to do
 - [ ] Find a good name :)
-- [ ] improve website - add CSS to popup
-- [ ] Possibility to print only a selection of the markers (e.g. only show CAMs)
-- [ ] New markers for objects
-- [ ] Security/load assessment
-- [ ] heading - orientation to improve
-- [ ] Localisation Kalman filter
-- [ ] Center on one marker
-- [ ] Clean up all includes - msgs - dependencies
-- [ ] Use different markers for different sources
-- [ ] Map provider to be more flexible for compilation and run (avoid to recompile)
-- [ ] HMI information -> put on the side of the map
-- [ ] Add repetition possibility
-- [ ] Integrate to ThingsBoard
+- [ ] Refresg Rate needs to be corrected for map markers
+- [ ] Map Objects are not flushed out periodically
+- [ ] Local Fusion of the testfield causes object doubling (Any Quick fix ?)
+- [ ] Localistation pacakge needs to written 
+
 
 
